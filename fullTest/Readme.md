@@ -17,4 +17,3 @@
 - https://code.visualstudio.com/docs/languages/markdown
 - https://developer.chrome.com/extensions/manifest
 - chrome://extensions/
-- www.iconsplace.com
