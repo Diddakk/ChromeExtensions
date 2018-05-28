@@ -1,0 +1,19 @@
+{
+    "manifest_version":2,
+    "name":"Filmit Extension",
+    "version":"1.0",
+    "description":"Busca en Filmaffinity al vuelo desde el menú contextual.",
+    "icons":{
+        "128":"img/icon128.png",
+        "48":"img/icon48.png",
+        "16":"img/icon16.png"
+    },    
+    "background": {
+        "scripts": ["event/eventPage.js"],
+        "persistent": false
+    },
+    "permissions":[
+        "tabs",
+        "contextMenus"
+    ]
+}

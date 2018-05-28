@@ -1,0 +1,19 @@
+{
+    "manifest_version":2,
+    "name":"Speakit Extension",
+    "version":"1.0",
+    "description":"Speak the selected text.",
+    "icons":{
+        "128":"img/black-speaker-128.png",
+        "48":"img/black-speaker-48.png",
+        "16":"img/black-speaker-16.png"
+    },    
+    "background": {
+        "scripts": ["event/eventPage.js"],
+        "persistent": false
+    },
+    "permissions":[
+        "tts",
+        "contextMenus"
+    ]
+}
