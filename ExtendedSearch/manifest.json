@@ -1,0 +1,33 @@
+{
+    "manifest_version":2,
+    "name":"Extended Search",
+    "version":"1.0",
+    "description":"Extended Search",
+    "icons":{
+        "128":"img/icon128.png",
+        "48":"img/icon48.png",
+        "16":"img/icon16.png"
+    },
+    "browser_action":{
+        "default_icon":"img/icon16.png",
+        "default_popup":"popup/popup.html"
+    },
+    "options_page":"options/options.html",
+    "background": {
+        "scripts": ["background/background.js"],
+        "persistent": false
+    },
+    "permissions":[
+        "tabs",
+        "storage",
+        "notifications",
+        "contextMenus"
+    ],
+    "content_scripts":[
+        {
+            "matches":["https://developer.chrome.com/*"],
+            "js": ["resources/js/jquery-3.3.1.min.js", "content/content.js"],
+            "css": ["content/content.css"]
+        }
+    ]
+}
