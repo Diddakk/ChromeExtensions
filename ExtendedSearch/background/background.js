@@ -3,16 +3,16 @@
     chrome.storage.sync.get("searchers", function (rs) {
         searchers = rs.searchers;
         if (searchers) {
-            $.map(searchers, function (searcher) {
+            $.map(searchers, function (searcher, key) {
                 chrome.contextMenus.create({
-                    "id": searcher.name,
+                    "id": key,
                     "title": searcher.name,
                     "contexts": ["selection"]
                 });
             });
             chrome.contextMenus.onClicked.addListener(function (clickData) {
-                $.map(searchers, function (searcher) {
-                    if (clickData.menuItemId === searcher.name && clickData.selectionText) {
+                $.map(searchers, function (searcher, key) {
+                    if (clickData.menuItemId === key && clickData.selectionText) {
                         var createData = {
                             "url": fixedEncodeUri(searcher.url + clickData.selectionText),
                             "active": false
