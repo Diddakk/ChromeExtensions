@@ -7,15 +7,18 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         $(".js-selection-section__selection-input").val(request.selection);
         var $list = $(".links-section__list");
         var tmplt = "<li><a href='{{url}}" + request.selection  + "' target='_blank'>{{name}}</a></li>";
-
-        $list.html($.map(searchers, function (searcher) {
-            var result = tmplt.replace( /{{name}}/, searcher.name).replace( /{{url}}/, searcher.url);
-            return result;
-        }).join(""));
+        chrome.storage.sync.get("searchers", function (rs) {
+            if (rs.searchers) {
+                $list.html($.map(rs.searchers, function (searcher) {
+                    var result = tmplt.replace( /{{name}}/, searcher.name).replace( /{{url}}/, searcher.url);
+                    return result;
+                }).join(""));
+            }
+        });        
     }
 });    
 })();
-(function () {
+/* (function () {
     $("a").on("click", function () {
         var createData = {
             "url": fixedEncodeUri(a.attr("href")),
@@ -23,4 +26,4 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         };
         chrome.tabs.create(createData, function (){});
     });
-})();
+})(); */

@@ -9,7 +9,7 @@
                 chrome.storage.sync.set({"searchers": searchers}, function() {
                 });
             }else{
-                chrome.storage.sync.set({"searchers": [newSearcherObject]}, function() {
+                chrome.storage.sync.set({"searchers": {newSearcherObject}}, function() {
                 });
             }
         });
