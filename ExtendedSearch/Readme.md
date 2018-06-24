@@ -15,5 +15,36 @@
 # Related Links
 
 - https://code.visualstudio.com/docs/languages/markdown
-- https://developer.chrome.com/extensions/manifest
+- https://developer.chrome.com/extensions
 - chrome://extensions/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.imdb.com/find?ref_=nv_sr_fn&q=metal&s=all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
