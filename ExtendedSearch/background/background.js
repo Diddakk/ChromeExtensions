@@ -30,5 +30,6 @@
             }
         });
     }
+    chrome.contextMenus.removeAll();
     setContextMenu();
 })();

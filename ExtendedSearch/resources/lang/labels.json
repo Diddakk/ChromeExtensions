@@ -1,0 +1,46 @@
+{
+    "add_new_link":{
+        "en":"Add new link",
+        "es":"Añade un nuevo enlace"
+    },
+    "options":{
+        "en":"Options",
+        "es":"Opciones"
+    },
+    "name":{
+        "en":"Name",
+        "es":"Nombre"
+    },
+    "extended_search":{
+        "en":"Extended Search",
+        "es":"Buscador Extendido"
+    },
+    "url":{
+        "en":"Url",
+        "es":"Url"
+    },
+    "save_new_searcher":{
+        "en":"Save new searcher",
+        "es":"Guardar nuevo buscador"
+    },
+    "all_my_links":{
+        "en":"All my links",
+        "es":"Todos mis enlaces"
+    },
+    "exear":{
+        "en":"Exear",
+        "es":"Exear"
+    },
+    "remove_link":{
+        "en":"You can remove a link by clicking the X",
+        "es":"Puedes eliminar un enlace haciendo click en la X"
+    },
+    "developed_by":{
+        "en":"Developed by",
+        "es":"Desarrollado por"
+    },
+    "":{
+        "en":"",
+        "es":""
+    }
+}

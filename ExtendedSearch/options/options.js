@@ -33,7 +33,7 @@ function addNewSearcher(newUrl) {
 function renderSearcherList() {
     var $list = $(".links-section__list");
     $list.html("");
-    var tmplt = "<li data-searcher-id='{{id}}'>{{title}}<a href='#' class='js-links-section__delete-searcher'>x</a></li>";
+    var tmplt = "<li data-searcher-id='{{id}}'>{{title}}<a href='#' class='js-links-section__delete-searcher'>X</a></li>";
     chrome.storage.sync.get("searchers", function (rs) {
         var searchers = rs.searchers;
         if (searchers) {
@@ -48,7 +48,6 @@ function renderSearcherList() {
             delete searchers[id];
             chrome.storage.sync.set({"searchers": searchers}, function() {});
             renderSearcherList();
-            //console.log("delete");
         }); 
     }); 
 }

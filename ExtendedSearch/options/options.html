@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/resources/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="options.css">
-    <title>Options</title>
+    <title>Extended Search - Options</title>
 </head>
+
 <body>
-    <div class="new-url__section">
-        <input type="text" class="new-url__input">
-        <button type="button" class="new-url__save">Save New Searcher</button>
-    </div>
-    <div class="links-section">
-        <ul class="links-section__list"></ul>
-    </div>
-    <p>https://www.imdb.com/find?ref_=nv_sr_fn&s=all&q=</p>            
-    <p>https://www.filmaffinity.com/es/search.php?stext=</p>
+    <header>
+        <img src="/img/icon48.png" alt="Extended Search">
+        <h1 class="lang" data-lang="extended_search"></h1>        
+    </header>
+    <section>
+        <header>
+            <h2 class="lang" data-lang="options"></h2>
+        </header>
+        <section class="new-url__section">
+            <header>
+                <h3 class="lang" data-lang="add_new_link"></h3>
+            </header>
+            <div class="new-url__sub-section">
+                <label for="new-url__input-name" class="lang" data-lang="name"></label>
+                <input type="text" id="new-url__input-name" class="new-url__input-name">
+            </div>
+            <div class="new-url__sub-section">
+                <label for="new-url__input-url" class="lang" data-lang="url"></label>
+                <input type="text" id="new-url__input-url" class="new-url__input-url">
+            </div>
+
+            <div class="new-url__sub-section">
+                <button type="button" class="new-url__save lang" data-lang="save_new_searcher"></button>
+            </div>
+        </section>
+    
+        <section class="links-section">
+            <header>
+                <h3 class="lang" data-lang="all_my_links"></h3>
+                <p class="lang" data-lang="remove_link"></p>
+            </header>
+            <ul class="links-section__list"></ul>
+        </section>
+    </section>
+    <footer>
+        <p><span class="lang" data-lang="developed_by"></span><span> Diego Rivera Riera</span></p>
+    </footer>
     <script src="/resources/js/jquery-3.3.1.min.js"></script>
+    <script src="/resources/js/common.js"></script>
     <script src="options.js"></script>
 </body>
+
 </html>

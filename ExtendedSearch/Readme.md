@@ -39,20 +39,6 @@ https://www.filmaffinity.com/es/search.php?stext=
 
 
 
-(function () {
-    /* var searchersPlain = [
-        {
-            name: "filmaffinity",
-            url: "https://www.filmaffinity.com/es/search.php?stext="
-        },
-        {
-            name:"imdb",
-            url: "https://www.imdb.com/find?q="
-        }
-    ]; */    
-});
-
-
 
 
 
