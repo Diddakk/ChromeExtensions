@@ -33,11 +33,24 @@
 
 
 
-https://www.imdb.com/find?ref_=nv_sr_fn&q=metal&s=all
+https://www.imdb.com/find?ref_=nv_sr_fn&s=all&q=
+https://www.filmaffinity.com/es/search.php?stext=
 
 
 
 
+(function () {
+    /* var searchersPlain = [
+        {
+            name: "filmaffinity",
+            url: "https://www.filmaffinity.com/es/search.php?stext="
+        },
+        {
+            name:"imdb",
+            url: "https://www.imdb.com/find?q="
+        }
+    ]; */    
+});
 
 
 
